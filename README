@@ -1,0 +1,53 @@
+/****************************************************************
+Copyright (C) AT&T 1995
+All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of AT&T or any of its entities
+not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior
+permission.
+
+AT&T DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL AT&T OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+****************************************************************/
+
+This version of hoc is slightly modified from the one
+found in The Unix Programming Environment, by Brian Kernighan
+and Rob Pike (Addison-Wesley, 1984).
+
+Changes since the book version:
+
+1.  The variable "_" contains the result of the last
+top-level expression evaluation, so you can re-use
+intermediate values without re-typing them.
+
+2.  for statement added, like the one in C,
+except that components may not be empty.
+
+3.  ++ and -- added, but don't work with $i.
+
+4.  Interrupts are caught; use cntrl-D to quit.
+
+5.  % operator added.
+
+6.  +=, -=, etc., added.
+
+7.  \ at end of line eats newline.
+
+8.  results are 15 digits but variable PREC can be
+used to override this.
+
+9.  tabs on output are no longer.
+
+10. asin, acos, sinh, cosh, tanh, erf, erfc
