@@ -285,13 +285,13 @@ execerror(char* s, char* t)	/* recover from run-time error */
 }
 
 void
-fpecatch(void)	/* catch floating point exceptions */
+fpecatch(int signum)	/* catch floating point exceptions */
 {
 	execerror("floating point exception", (char *) 0);
 }
 
 void
-intcatch(void)	/* catch interrupts */
+intcatch(int signum)	/* catch interrupts */
 {
 	execerror("interrupt", (char *) 0);
 }
