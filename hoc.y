@@ -309,8 +309,7 @@ int
 main(int argc, char* argv[])	/* hoc6 */
 {
 	static int first = 1;
-#ifdef YYDEBUG
-	extern int yydebug;
+#if YYDEBUG
 	yydebug=3;
 #endif
 	progname = argv[0];
