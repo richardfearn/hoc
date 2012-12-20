@@ -5,7 +5,7 @@ SRC = hoc.y hoc.h code.c init.c math.c symbol.c
 OBJS = hoc.o code.o init.o math.o symbol.o
 
 hoc:	$(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -lstdio -lm -o hoc
+	$(CC) $(CFLAGS) $(OBJS) -lm -o hoc
 
 hoc.o code.o init.o symbol.o:	hoc.h
 
